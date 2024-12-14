@@ -1,0 +1,8 @@
+---
+- name: Install
+  community.general.homebrew:
+    name:
+      - docker
+      # - homebrew/cask/docker
+    state: present
+  become: yes

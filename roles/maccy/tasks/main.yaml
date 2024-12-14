@@ -1,0 +1,6 @@
+---
+- name: Install maccy
+  community.general.homebrew:
+    name: homebrew/cask/maccy
+    state: present
+  become: yes

@@ -1,0 +1,19 @@
+---
+- name: Install language
+  community.general.homebrew:
+    name:
+      - go
+    state: present
+  become: yes
+
+- name: Install tools
+  community.general.homebrew:
+    name:
+      - gotestsum
+      - go-critic
+      - golang-migrate
+      - golangci-lint
+      - prettierd
+    state: present
+  become: yes
+

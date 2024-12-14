@@ -1,0 +1,68 @@
+---
+- name: Set diff.colorMoved
+  community.general.git_config:
+    name: diff.colorMoved
+    scope: global
+    value: zebra
+
+- name: Set fetch.prune
+  community.general.git_config:
+    name: fetch.prune
+    scope: global
+    value: true
+
+- name: Set init.defaultBranch
+  community.general.git_config:
+    name: init.defaultBranch
+    scope: global
+    value: main
+
+- name: Set pull.rebase
+  community.general.git_config:
+    name: pull.rebase
+    scope: global
+    value: true
+
+- name: Set rebase.autoStash
+  community.general.git_config:
+    name: rebase.autoStash
+    scope: global
+    value: true
+
+- name: Set editor
+  community.general.git_config:
+    name: core.editor
+    scope: global
+    value: vim
+
+- name: Set alias lg
+  community.general.git_config:
+    name: alias.lg
+    scope: global
+    value: log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+# - name: Set alias se
+#   community.general.git_config:
+#     name: alias.se
+#     scope: global
+#     value: !git rev-list --all | xargs git grep -F
+
+- name: Set alias se
+  community.general.git_config:
+    name: alias.br
+    scope: global
+    value: branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+
+- name: Set user.email
+  community.general.git_config:
+    name: user.email
+    scope: global
+    value: "{{ git_user_email }}"
+  no_log: true
+
+- name: Set user.name
+  community.general.git_config:
+    name: user.name
+    scope: global
+    value: "{{ git_user_name }}"
+

@@ -1,0 +1,6 @@
+---
+- name: Install node and bun
+  community.general.homebrew:
+    name: homebrew/cask/visual-studio-code
+    state: present
+  become: yes

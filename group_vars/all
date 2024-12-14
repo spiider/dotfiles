@@ -4,13 +4,13 @@ default_roles:
   - git
   - go
   - iterm2
-  - lazydocker
-  - lazygit
+  - maccy
   - neovim
   - nodejs
   - oh-my-zsh
   - postman
-  - ripgrep
+  - rectangle
+  - google-chrome
   - spotify
   - visual-studio-code
   - zsh

@@ -1,0 +1,17 @@
+---
+- name: Install
+  community.general.homebrew:
+    name:
+      - jq
+      - gettext
+      - tree-sitter
+      - lua
+      - luajit
+      - luarocks
+      - starship
+      - ripgrep
+      - homebrew/cask/font-fira-mono-nerd-font
+    state: present
+    update_homebrew: true
+    upgrade_all: true
+  become: yes

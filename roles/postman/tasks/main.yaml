@@ -1,0 +1,6 @@
+---
+- name: Install Postman
+  community.general.homebrew:
+    name: homebrew/cask/postman
+    state: present
+  become: yes

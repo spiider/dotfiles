@@ -1,0 +1,8 @@
+---
+- name: Install node and bun
+  community.general.homebrew:
+    name: 
+      - node
+      # - homebrew/oven-sh/bun/bun
+    state: present
+  become: yes
