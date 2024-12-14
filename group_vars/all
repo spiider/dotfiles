@@ -1,0 +1,17 @@
+default_roles:
+  - system
+  - docker
+  - git
+  - go
+  - iterm2
+  - lazydocker
+  - lazygit
+  - neovim
+  - nodejs
+  - oh-my-zsh
+  - postman
+  - ripgrep
+  - spotify
+  - visual-studio-code
+  - zsh
+
