@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: homebrew/cask/visual-studio-code
     state: present
-  become: yes

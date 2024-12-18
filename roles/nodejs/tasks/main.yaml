@@ -5,4 +5,3 @@
       - node
       # - homebrew/oven-sh/bun/bun
     state: present
-  become: yes

@@ -3,7 +3,6 @@
   community.general.homebrew:
     name: neovim
     state: present
-  become: yes
 
 - name: Clone neovim config
   ansible.builtin.git:

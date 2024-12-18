@@ -4,7 +4,6 @@
     name:
       - go
     state: present
-  become: yes
 
 - name: Install tools
   community.general.homebrew:
@@ -15,5 +14,4 @@
       - golangci-lint
       - prettierd
     state: present
-  become: yes
 

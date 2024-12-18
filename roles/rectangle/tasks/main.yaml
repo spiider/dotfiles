@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: homebrew/cask/rectangle
     state: present
-  become: yes

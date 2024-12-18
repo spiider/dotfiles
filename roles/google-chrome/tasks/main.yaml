@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: homebrew/cask/google-chrome
     state: present
-  become: yes

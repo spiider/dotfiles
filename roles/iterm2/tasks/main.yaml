@@ -3,4 +3,3 @@
   community.general.homebrew:
     name: homebrew/cask/iterm2
     state: present
-  become: yes

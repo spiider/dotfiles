@@ -5,4 +5,3 @@
       - docker
       # - homebrew/cask/docker
     state: present
-  become: yes
